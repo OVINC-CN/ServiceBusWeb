@@ -3,17 +3,20 @@ import enUS from '@arco-design/web-vue/es/locale/lang/en-us';
 import zhCN from '@arco-design/web-vue/es/locale/lang/zh-cn';
 import mZhCN from './zh-cn'
 import mEnUS from './en-us'
+import { changeLangAPI } from '../api/home'
 
 export const langOption = [
   {
     name: '简体中文',
     value: 'zhCN',
     locale: zhCN,
+    backend: 'zh-hans'
   },
   {
     name: 'English',
     value: 'enUS',
     locale: enUS,
+    backend: 'en'
   }
 ]
 
@@ -22,18 +25,21 @@ const userLangKey = 'user-language'
 let mLocal = 'zhCN'
 export let locale = zhCN
 
-export const changeLang = (value) => {
-  localStorage.setItem(userLangKey, value)
+export const changeLang = async (value) => {
+  let curLang = null
   langOption.forEach(item => {
     if (item.value === value) {
-      locale = item.locale
-      mLocal = item.value
+      curLang = item
     }
+  })
+  locale = curLang.locale
+  mLocal = curLang.value
+  await changeLangAPI(curLang.backend).then(() => {
+    localStorage.setItem(userLangKey, value)
   })
 }
 export const changeLangAndReload = (value) => {
-  changeLang(value)
-  window.location.reload()
+  changeLang(value).finally(() => window.location.reload())
 }
 
 const userLang = localStorage.getItem(userLangKey)

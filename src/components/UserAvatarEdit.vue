@@ -102,6 +102,7 @@ const onSuccess = fileItem => {
       title: i18n.t('UploadFailed'),
       content: message,
       modalStyle: {textAlign: 'center'},
+      okText: i18n.t('OK')
     })
   }
 }
@@ -111,6 +112,7 @@ const onError = fileItem => {
     title: i18n.t('UploadFailed'),
     content: fileItem.response.message,
     modalStyle: {textAlign: 'center'},
+    okText: i18n.t('OK')
   })
 }
 const onBeforeUpload = file => new Promise(resolve => {

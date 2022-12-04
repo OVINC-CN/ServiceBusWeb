@@ -37,7 +37,8 @@ const mEnUS = {
   maxAvatarSizeIs2M: 'limit 2MB',
   EditPhoneNumber: 'Edit Phone Number',
   EditMailAddress: 'Edit Mail Address',
-  UnionAPICenterForAllOVINCService: 'Support for all OVINC services on user and permission'
+  UnionAPICenterForAllOVINCService: 'Support for all OVINC services on user and permission',
+  OK: 'OK'
 }
 
 export default mEnUS

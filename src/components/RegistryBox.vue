@@ -160,7 +160,8 @@ const handleSubmit = ({values, errors}) => {
       title: i18n.t('RegistryFailed'),
       content: err.response.data.message,
       modalStyle: {textAlign: 'center'},
-      width: 340
+      width: 340,
+      okText: i18n.t('OK')
     })
   )
   handleLoading(loading, false)
