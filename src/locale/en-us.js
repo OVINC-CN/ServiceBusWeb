@@ -23,7 +23,20 @@ const mEnUS = {
   repeatPassword: 'Repeat Password',
   Password2NotMatch: 'Password Does not Match',
   RegistrySuccess: 'Registry Success',
-  RegistryFailed: 'Registry Failed'
+  RegistryFailed: 'Registry Failed',
+  lastLogin: 'Last Login',
+  logout: 'Logout',
+  logoutConfirm: 'Logout',
+  logoutConfirmContent: 'You are going to sign out for {username}, please confirm',
+  editUserInfo: 'Edit Profile',
+  avatar: 'Avatar',
+  mail_address: 'Mail Address',
+  phone_number: 'Phone Number',
+  UploadAvatar: 'Upload Avatar',
+  UploadFailed: 'Upload Failed',
+  maxAvatarSizeIs2M: 'limit 2MB',
+  EditPhoneNumber: 'Edit Phone Number',
+  EditMailAddress: 'Edit Mail Address',
 }
 
 export default mEnUS

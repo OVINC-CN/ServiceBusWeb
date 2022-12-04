@@ -18,7 +18,7 @@
                 id="app-menu-logo"
               >
                 <div>
-                  Service Bus
+                  OVINC
                 </div>
               </a-menu-item>
               <a-menu-item
@@ -41,33 +41,7 @@
                   </a-doption>
                 </template>
               </a-dropdown>
-              <a-avatar
-                v-if="userAvatar"
-                id="app-menu-avatar"
-              >
-                <img
-                  alt="avatar"
-                  :src="userAvatar"
-                >
-              </a-avatar>
-              <a-avatar
-                v-else-if="isLogin && user.nickname"
-                id="app-menu-avatar"
-              >
-                {{ user.nickname.slice(0, 1) }}
-              </a-avatar>
-              <a-avatar
-                v-else-if="isLogin && user.username"
-                id="app-menu-avatar"
-              >
-                {{ user.username.slice(0, 1) }}
-              </a-avatar>
-              <a-avatar
-                v-else
-                id="app-menu-avatar-no-login"
-              >
-                <icon-user />
-              </a-avatar>
+              <user-avatar />
             </a-space>
           </div>
         </a-layout-header>
@@ -88,6 +62,7 @@ import { useStore } from 'vuex'
 import { locale, langOption, changeLangAndReload } from './locale'
 import { useI18n } from 'vue-i18n'
 import { useRoute, useRouter } from 'vue-router'
+import UserAvatar from './components/UserAvatar.vue'
 
 // locale
 const i18n = useI18n()
@@ -130,9 +105,6 @@ const currentYear = ref(new Date().getFullYear())
 
 // store
 const store = useStore()
-const user = computed(() => store.state.user)
-const isLogin = computed(() => store.state.isLogin)
-const userAvatar = computed(() => store.state.userProperties.avatar)
 const mainLoading = computed(() => store.state.mainLoading)
 store.dispatch('getUserInfo')
 onMounted(() => store.dispatch('setMainLoading', false))
@@ -182,14 +154,6 @@ onMounted(() => store.dispatch('setMainLoading', false))
   color: var(--color-text-1);
   text-align: center;
   font-weight: bold;
-}
-
-#app-menu-avatar {
-  background: rgb(var(--arcoblue-5));
-}
-
-#app-menu-avatar-no-login {
-  background: var(--color-neutral-4);
 }
 
 #app-footer {

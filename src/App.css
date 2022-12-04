@@ -517,3 +517,12 @@ html, body, #app {
 .arco-icon {
     font-size: 18px;
 }
+
+.arco-empty {
+    display: flex;
+    flex-direction: column;
+}
+
+.arco-empty .arco-empty-image {
+    line-height: 0;
+}

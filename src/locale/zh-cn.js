@@ -23,7 +23,21 @@ const mZhCN = {
   repeatPassword: '再次填写密码',
   Password2NotMatch: '两次密码不匹配',
   RegistrySuccess: '注册成功',
-  RegistryFailed: '注册失败'
+  RegistryFailed: '注册失败',
+  lastLogin: '最近登录',
+  logout: '退出登录',
+  logoutConfirm: '退出登录',
+  logoutConfirmContent: '将登出 {username}, 请确认',
+  editUserInfo: '编辑资料',
+  avatar: '头像',
+  mail_address: '邮件地址',
+  phone_number: '联系电话',
+  UploadAvatar: '上传头像',
+  UploadFailed: '上传失败',
+  maxAvatarSizeIs2M: '请上传小于 2MB 的图片',
+  EditPhoneNumber: '编辑电话',
+  EditMailAddress: '编辑邮件地址',
+  UnionAPICenterForAllOVINCService: '为所有 OVINC 服务提供用户身份、权限集成支持'
 }
 
 export default mZhCN
