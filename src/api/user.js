@@ -11,3 +11,15 @@ export const signInAPI = data => new Promise((resolve, reject) => {
 export const signUpAPI = data => new Promise((resolve, reject) => {
   http.post('/account/sign_up/', data).then(res => resolve(res), err => reject(err));
 });
+
+export const listUserPropertyAPI = () => new Promise((resolve, reject) => {
+  http.get('/account/user_property/').then(res => resolve(res), err => reject(err));
+});
+
+export const signOutAPI = () => new Promise((resolve, reject) => {
+  http.get('/account/sign_out/').then(res => resolve(res), err => reject(err));
+});
+
+export const savePropertyAPI = properties => new Promise((resolve, reject) => {
+  http.post('/account/user_property/', properties).then(res => resolve(res), err => reject(err));
+});
