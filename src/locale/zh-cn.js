@@ -37,7 +37,8 @@ const mZhCN = {
   maxAvatarSizeIs2M: '请上传小于 2MB 的图片',
   EditPhoneNumber: '编辑电话',
   EditMailAddress: '编辑邮件地址',
-  UnionAPICenterForAllOVINCService: '为所有 OVINC 服务提供用户身份、权限集成支持'
+  UnionAPICenterForAllOVINCService: '为所有 OVINC 服务提供用户身份、权限集成支持',
+  OK: '确定'
 }
 
 export default mZhCN

@@ -111,7 +111,8 @@ const handleSubmit = ({values, errors}) => {
       title: i18n.t('LoginFailed'),
       content: err.response.data.message,
       modalStyle: {textAlign: 'center'},
-      width: 340
+      width: 340,
+      okText: i18n.t('OK')
     })
   ).finally(() =>   handleLoading(loading, false))
 }
