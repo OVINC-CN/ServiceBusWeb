@@ -78,16 +78,6 @@ const menu = ref([
     name: i18n.t('Home'),
     path_match: '/'
   },
-  {
-    key: 'Application',
-    name: i18n.t('Application'),
-    path_match: '/application/'
-  },
-  {
-    key: 'Permission',
-    name: i18n.t('PermissionCenter'),
-    path_match: '/permission/'
-  }
 ])
 const route = useRoute()
 const router = useRouter()
