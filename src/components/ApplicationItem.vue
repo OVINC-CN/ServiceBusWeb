@@ -99,7 +99,7 @@ const isManager = computed(() => {
       break
     }
   }
-  return isManager
+  return _isManager
 })
 
 // edit
