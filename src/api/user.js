@@ -23,3 +23,7 @@ export const signOutAPI = () => new Promise((resolve, reject) => {
 export const savePropertyAPI = properties => new Promise((resolve, reject) => {
   http.post('/account/user_property/', properties).then(res => resolve(res), err => reject(err));
 });
+
+export const searchUserAPI = keyword => new Promise((resolve, reject) => {
+  http.get(`/account/user_search/?keyword=${keyword}`).then(res => resolve(res), err => reject(err));
+});

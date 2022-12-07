@@ -526,3 +526,7 @@ html, body, #app {
 .arco-empty .arco-empty-image {
     line-height: 0;
 }
+
+.arco-avatar-text {
+    line-height: unset!important;
+}
