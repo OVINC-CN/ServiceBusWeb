@@ -38,7 +38,26 @@ const mZhCN = {
   EditPhoneNumber: '编辑电话',
   EditMailAddress: '编辑邮件地址',
   UnionAPICenterForAllOVINCService: '为所有 OVINC 服务提供用户身份、权限集成支持',
-  OK: '确定'
+  OK: '确定',
+  OpenUrl: '访问',
+  loadMore: '加载更多',
+  noMore: '暂无更多',
+  ApplicationCenter: '应用中心',
+  Admin: '管理员',
+  editApp: '编辑应用',
+  AppCode: '应用ID',
+  AppSecret: '应用密钥',
+  AppName: '应用名称',
+  Managers: '管理员',
+  AppLogo: '应用图标',
+  AppUrl: '访问地址',
+  AppCodeRequired: '应用ID不能为空',
+  AppSecretRequired: '应用密钥不能为空',
+  AppNameRequired: '应用名称不能为空',
+  ManagersRequired: '管理员不能为空',
+  AppLogoInvalid: '应用图标链接非法',
+  AppUrlInvalid: '应用访问地址非法',
+  createApp: '新建应用'
 }
 
 export default mZhCN

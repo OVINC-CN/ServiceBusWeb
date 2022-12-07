@@ -38,7 +38,26 @@ const mEnUS = {
   EditPhoneNumber: 'Edit Phone Number',
   EditMailAddress: 'Edit Mail Address',
   UnionAPICenterForAllOVINCService: 'Support for all OVINC services on user and permission',
-  OK: 'OK'
+  OK: 'OK',
+  OpenUrl: 'Open',
+  loadMore: 'Load More',
+  noMore: 'No More',
+  ApplicationCenter: 'Application Center',
+  Admin: 'Admin',
+  editApp: 'Edit App',
+  AppCode: 'App Code',
+  AppSecret: 'App Secret',
+  AppName: 'App Name',
+  Managers: 'Managers',
+  AppLogo: 'App Logo',
+  AppUrl: 'App Url',
+  AppCodeRequired: 'App Code Required',
+  AppSecretRequired: 'App Secret Required',
+  AppNameRequired: 'App Name Required',
+  ManagersRequired: 'Managers Required',
+  AppLogoInvalid: 'App Logo Invalid',
+  AppUrlInvalid: 'App Url Invalid',
+  createApp: 'Create App'
 }
 
 export default mEnUS
