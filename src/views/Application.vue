@@ -64,7 +64,7 @@ import { checkSuperPermissionAPI } from '../api/permission'
 import EditApplicationItem from '../components/EditApplicationItem.vue'
 
 // loading
-const loading = ref(true)
+const loading = ref(false)
 
 // page
 const current = ref(1)
@@ -107,15 +107,12 @@ const loadMore = () => {
 
 // edit
 const handleUpdateSuccess = app => {
-  let _apps = []
-  for (let _app of apps.value) {
-    if (app.app_code === _app.app_code) {
-      _apps.push(app)
-    } else {
-      _apps.push(_app)
+  for (const index in apps.value) {
+    if (apps.value[index].app_code === app.app_code) {
+      apps.value[index] = app
+      break
     }
   }
-  apps.value = _apps
 }
 
 // user

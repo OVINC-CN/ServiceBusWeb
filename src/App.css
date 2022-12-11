@@ -530,3 +530,7 @@ html, body, #app {
 .arco-avatar-text {
     line-height: unset!important;
 }
+
+.arco-btn-icon {
+    line-height: 0
+}
