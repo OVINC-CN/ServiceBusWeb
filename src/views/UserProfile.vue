@@ -70,6 +70,7 @@ const logout = () => {
     ),
     modalStyle: {textAlign: 'center'},
     hideCancel: false,
+    cancelText: i18n.t('Cancel'),
     okText: i18n.t('logout'),
     onOk: doLogout
   });

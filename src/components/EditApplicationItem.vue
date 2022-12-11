@@ -9,6 +9,7 @@
     :footer="false"
   >
     <a-form
+      ref="formRef"
       :auto-label-width="true"
       :model="app"
       @submit="doSubmit"
@@ -87,6 +88,7 @@
       <a-form-item>
         <a-space>
           <a-button
+            :disabled="!isCreate"
             @click="$refs.formRef.resetFields()"
             :loading="loading"
           >

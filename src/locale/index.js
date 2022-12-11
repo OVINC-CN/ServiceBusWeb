@@ -5,6 +5,7 @@ import mZhCN from './zh-cn'
 import mEnUS from './en-us'
 import { changeLangAPI } from '../api/home'
 
+// language option
 export const langOption = [
   {
     name: '简体中文',
@@ -20,11 +21,14 @@ export const langOption = [
   }
 ]
 
+// local storage key
 const userLangKey = 'user-language'
 
+// default language
 let mLocal = 'zhCN'
 export let locale = zhCN
 
+// change language
 export const changeLang = async (value) => {
   let curLang = null
   langOption.forEach(item => {
@@ -42,12 +46,14 @@ export const changeLangAndReload = (value) => {
   changeLang(value).finally(() => window.location.reload())
 }
 
+// load language
 const userLang = localStorage.getItem(userLangKey)
 if (userLang) changeLang(userLang);
 
+// i18n
 const i18n = createI18n({
   locale: mLocal,
-  fallbackLocale: 'zhCN',
+  fallbackLocale: 'enUS',
   legacy: false,
   messages: {
     zhCN: mZhCN,

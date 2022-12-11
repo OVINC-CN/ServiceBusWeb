@@ -46,7 +46,11 @@
           </div>
         </a-layout-header>
         <a-layout-content>
-          <router-view />
+          <router-view v-slot="{ Component }">
+            <keep-alive>
+              <component :is="Component" />
+            </keep-alive>
+          </router-view>
         </a-layout-content>
         <a-layout-footer id="app-footer">
           Copyright&nbsp;&copy;&nbsp;2022 - {{ currentYear }} OVINC-CN
@@ -82,6 +86,11 @@ const menu = ref([
     key: 'Application',
     name: i18n.t('Application'),
     path_match: '/app/'
+  },
+  {
+    key: 'Permission',
+    name: i18n.t('Permission'),
+    path_match: '/permission/'
   },
 ])
 const route = useRoute()
