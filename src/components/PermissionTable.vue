@@ -52,6 +52,7 @@
             {{ $t('Allow') }}
           </a-button>
           <a-button
+            :disabled="record.status !== 'dealing'"
             status="warning"
             size="mini"
             @click="dealApply(record.id, 'denied')"
