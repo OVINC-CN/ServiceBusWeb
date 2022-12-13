@@ -22,6 +22,7 @@
     "devDependencies": {
         "@arco-design/web-vue": "^2.39.2",
         "@microsoft/eslint-formatter-sarif": "2.1.7",
+        "@vitejs/plugin-basic-ssl": "^1.0.1",
         "@vitejs/plugin-vue": "^2.0.1",
         "eslint": "8.22.0",
         "eslint-plugin-vue": "^8.0.3",
