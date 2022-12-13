@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@arco-design/web-vue': ^2.39.2
   '@microsoft/eslint-formatter-sarif': 2.1.7
+  '@vitejs/plugin-basic-ssl': ^1.0.1
   '@vitejs/plugin-vue': ^2.0.1
   axios: ^0.27.2
   eslint: 8.22.0
@@ -29,6 +30,7 @@ dependencies:
 devDependencies:
   '@arco-design/web-vue': 2.39.2_vue@3.2.45
   '@microsoft/eslint-formatter-sarif': 2.1.7
+  '@vitejs/plugin-basic-ssl': 1.0.1_vite@2.9.15
   '@vitejs/plugin-vue': 2.3.4_vite@2.9.15+vue@3.2.45
   eslint: 8.22.0
   eslint-plugin-vue: 8.7.1_eslint@8.22.0
@@ -234,6 +236,15 @@ packages:
 
   /@types/json5/0.0.29:
     resolution: {integrity: sha1-7ihweulOEdK4J7y+UnC86n8+ce4=}
+    dev: true
+
+  /@vitejs/plugin-basic-ssl/1.0.1_vite@2.9.15:
+    resolution: {integrity: sha512-pcub+YbFtFhaGRTo1832FQHQSHvMrlb43974e2eS8EKleR3p1cDdkJFPci1UhwkEf1J9Bz+wKBSzqpKp7nNj2A==}
+    engines: {node: '>=14.6.0'}
+    peerDependencies:
+      vite: ^3.0.0 || ^4.0.0
+    dependencies:
+      vite: 2.9.15
     dev: true
 
   /@vitejs/plugin-vue/2.3.4_vite@2.9.15+vue@3.2.45:
