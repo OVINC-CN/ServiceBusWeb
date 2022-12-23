@@ -34,6 +34,16 @@
         />
       </a-form-item>
       <a-form-item
+        :label="$t('ResourceID')"
+        field="=resource_id"
+        feedback
+      >
+        <a-input
+          v-model="action.resource_id"
+          :disabled="loading"
+        />
+      </a-form-item>
+      <a-form-item
         :label="$t('ResourceName')"
         field="=resource_name"
         feedback
