@@ -97,7 +97,8 @@ const mEnUS = {
   deniedWontShow: 'Already denied permissions won\'t show here.',
   ApplyData: 'Apply List',
   Allow: 'Allow',
-  Deny: 'Deny'
+  Deny: 'Deny',
+  ResourceID: 'Resource ID',
 }
 
 export default mEnUS

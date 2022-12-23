@@ -97,7 +97,8 @@ const mZhCN = {
   deniedWontShow: '已驳回的权限不会出现在列表中',
   ApplyData: '申请列表',
   Allow: '通过',
-  Deny: '驳回'
+  Deny: '驳回',
+  ResourceID: '资源ID',
 }
 
 export default mZhCN

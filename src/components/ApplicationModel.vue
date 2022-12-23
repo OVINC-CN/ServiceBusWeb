@@ -123,6 +123,10 @@ const columns = [
     dataIndex: 'action_name',
   },
   {
+    title: i18n.t('ResourceID'),
+    dataIndex: 'resource_id',
+  },
+  {
     title: i18n.t('ResourceName'),
     dataIndex: 'resource_name',
   },
